@@ -25,7 +25,7 @@ body {
     height: 750px;
 }
 .view .view-text {
-    display: inline-block;
+    display: none;
     font-size: 5em;
     text-align: center;
     color: #2A2B35;
@@ -34,7 +34,7 @@ body {
     width: 70%;
 }
 .view-bio {
-    display: none;
+    display: inline-block;
     position: absolute;
     background-color: rgba(104, 104, 104, 1);
     font-size: 1.25em;
@@ -46,7 +46,7 @@ body {
     border-radius: 45px;
 }
 .view-bio-nub {
-    display: none;
+    display: inline-block;
     width: 50px;
     position: absolute;
     z-index: 1;
@@ -57,7 +57,7 @@ body {
     -moz-transform: rotate(45deg);
 }
 .view-image {
-    display: none;
+    display: inline-block;
     background: url(../images/biopic.jpg) no-repeat;
     background-size: 100%;
     border: 10px solid #F6F6F6;
