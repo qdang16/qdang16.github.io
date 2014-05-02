@@ -6,27 +6,65 @@ body {
 .navbar {
     position: fixed;
     width: 100%;
-    height: 50px;
-    background-color: #F6F6F6;
     z-index: 1;
 }
 .tab {
     float: left;
-    border-bottom: 2px solid skyblue;
+    padding: 20px 50px;
+    margin: auto;
+}
+.tab:hover {
+    background-color: darkgrey;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
 }
 .view {
-    position: absolute;
+    position: relative;
     background: url(../images/cityview.jpg) no-repeat;
     width: 100%;
     height: 750px;
 }
 .view .view-text {
+    display: inline-block;
     font-size: 5em;
     text-align: center;
     color: #2A2B35;
     margin: auto;
     padding-top: 300px;
     width: 70%;
+}
+.view-bio {
+    display: none;
+    position: absolute;
+    background-color: rgba(104, 104, 104, 1);
+    font-size: 1.25em;
+    width: 400px;
+    color: black;
+    opacity: 1;
+    margin: 150px 0px 0px 100px;
+    padding: 30px;
+    border-radius: 45px;
+}
+.view-bio-nub {
+    display: none;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(104, 104, 104, 1);
+    height: 50px;
+    margin: 100px 150px 0px -55px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+.view-image {
+    display: none;
+    background: url(../images/biopic.jpg) no-repeat;
+    background-size: 100%;
+    border: 10px solid #F6F6F6;
+    border-radius: 180px;
+    width: 300px;
+    height: 300px;
+    margin: 150px 0px 0px 200px;
 }
 /*
 .button {
@@ -41,3 +79,62 @@ body {
     background-color: lightgrey;
 } 
 */
+ .projects-container {
+    position: relative;
+    background: url(../images/projects2.jpg) no-repeat;
+    background-size: 100%;
+    height: 750px;
+    padding: 0px 50px 0px;
+}
+.projects-box {
+    margin: 30px 10px 10px 10px;
+    float: left;
+    height: 400px;
+    width: 30%;
+    background-color: rgba(120, 120, 120, 0.25);
+    border-radius: 60px;
+}
+.projects-title {
+    padding-top: 100px;
+    font-size: 4em;
+}
+.projects-name {
+    padding: 20px 0px;
+    font-size: 2.5em;
+    text-align: center;
+}
+.projects-date {
+    font-size: 1.25em;
+    text-align: center;
+}
+.projects-info {
+    padding: 20px 0px;
+}
+.contactme-container {
+    position: relative;
+    background: url(../images/citycontact.jpg) no-repeat;
+    background-size: 100%;
+    height: 750px;
+}
+.contactme-title {
+    padding: 100px 50px 0px;
+    font-size: 4em;
+    text-align: center;
+}
+.contactme-box {
+    display: inline-block;
+    background-color: rgba(120, 120, 120, 0.25);
+    padding: 20px;
+    margin: 25px 0px 25px 5px;
+    font-size: 2em;
+    text-align: center;
+    width: 30%;
+}
+.contactme-box a {
+    text-decoration: none;
+    color: black;
+}
+.contactme-hidden {
+    text-decoration: none;
+    color: black;
+}
